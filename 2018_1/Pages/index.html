@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>
+MainPage
+</title>
+<link rel="stylesheet" href="../Styles/index_styles.css">
+
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@4.4.1/dist/typeit.min.js"></script>
+<script>
+        $(document).ready(function(){
+            $("#vnutrgenres1").hide();
+            $("#vnutrgenres2").hide();
+            $("#iziclick1").click(function(){
+                $("#vnutrgenres1").slideToggle();
+                $("#vnutrgenres2").slideToggle();
+            });
+        });
+	</script>
+
+<script>
+    $(document).ready(function(){
+        $("#pechat1").typeIt({
+            strings: ["Hello, please, read books with us.", "Smart people usually read.", "You don't know how much you lose."],
+            html:true,
+            cursor:true,
+            breakLines:true,
+            lifeLike:true,
+            loop:true,
+            startDelete:false,
+            speed: 100,
+            cursorSpeed:1000,
+            deleteDelay: 750,
+            breakDelay:750,
+            startDelay:250,
+            loopDelay:750
+        });
+    });
+</script>
+</head>
+<body>
+	<header id="header_main" role="banner">
+		<img src="../Images/book1.png" alt="">
+		<nav>
+			<ul>
+				<li><a href="#home_menu_click">home</a></li>
+				<li><a href="#about_menu_click">about</a></li>
+				<li><a id="iziclick1" href="#">genres</a>
+					<ul id="vnutrgenres1">
+                        <li><a href="shop_page1.html#adventure">Adventure</a></li>
+						<li><a href="shop_page1.html#drama">Drama</a></li>
+                        <li><a href="shop_page1.html#comics">Comics</a></li>
+                        <li><a href="shop_page1.html#history">History</a></li>
+                        <li><a href="shop_page1.html#horror">Horror</a></li>
+						<li><a href="shop_page1.html#romance">Romance</a></li>
+						<li><a href="shop_page1.html#mystery">Mystery</a></li>
+						<li><a href="shop_page1.html#poetry">Poetry</a></li>
+                        <li><a href="shop_page1.html#satire">Satire</a></li>
+                        <li><a href="shop_page1.html#science">Science</a></li>
+					</ul>
+					<ul id="vnutrgenres2">
+                        <li><a href="shop_page1.html#biographies">Biographies</a></li>
+                        <li><a href="shop_page1.html#children">Children</a></li>
+                        <li><a href="shop_page1.html#diaries">Diaries</a></li>
+                        <li><a href="shop_page1.html#dictionaries">Dictionaries</a></li>
+                        <li><a href="shop_page1.html#encyclopedias">Encyclopedias</a></li>
+						<li><a href="shop_page1.html#fantasy">Fantasy</a></li>
+                        <li><a href="shop_page1.html#journals">Journals</a></li>
+                        <li><a href="shop_page1.html#health">Health</a></li>
+						<li><a href="shop_page1.html#religion">Religion</a></li>
+                        <li><a href="shop_page1.html#">Series</a></li>
+					</ul>
+				</li>
+				<li><a href="#learnmainvideos">learn</a></li>
+				<li><a href="#contactinfomain">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main id="home_menu_click" role="main">
+		<section>
+			<div>
+				<h1>Read to get smarter</h1>
+				<p>"Reading is a kind of charging for the brain.<br>
+					Reader experiences the same moments as the
+					heroes of books, falls into the same situations,
+				    receives a positive charge, develops thinking and
+				    simultaneously pumps the muscles of the brain "
+					</p>
+				<a href="shop_page1.html"><input type="button" value="read now"></a>
+                <div id="pechat1"></div>
+            </div>
+		</section>
+		<section id="about_menu_click">
+			<div class="bkstates">
+				<img src="../Images/book_1.gif" alt="ERROR">
+				<div class="grbkstates">
+					<strong>1000</strong>
+					<p>books sold</p>
+				</div>
+			</div>
+			<div class="bkstates">
+				<img src="../Images/clock_1.gif" alt="ERROR">
+				<div class="grbkstates">
+					<strong>1</strong>
+					<p>year of work</p>
+			    </div>
+			</div>
+			<div class="bkstates">
+				<img src="../Images/otziv_1.gif" alt="ERROR">
+				<div class="grbkstates">
+					<strong>540</strong>
+					<p>positive reviews</p>
+				</div>
+			</div>
+			<div class="bkstates">
+				<img src="../Images/univ_1.gif" alt="ERROR">
+				<div class="grbkstates">
+					<strong>27</strong>
+					<p>universities-partners</p>
+				</div>
+			</div>
+		</section>
+		<section>
+            <div class="sails">
+                <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/hp7.jpg" alt="ERROR"><input type="button" value="-50&#37;"><input type="button" value="51&#36;" ></div>
+                <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/hg.jpg" alt="ERROR"><input type="button" value="-40&#37;"><input type="button" value="34&#36;" ></div>
+                <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/twlg.jpg" alt="ERROR"><input type="button" value="-45&#37;"><input type="button" value="52&#36;" ></div>
+                <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/on_79.jpg" alt="ERROR"><input type="button" value="-60&#37;"><input type="button" value="25&#36;" ></div>
+            </div>
+            <div class="sails">
+                <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/punp_2.jpg" alt="ERROR"><input type="button" value="-30&#37;"><input type="button" value="28&#36;" ></div>
+                <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/aot_vol17.png" alt="ERROR"><input  type="button" value="-60&#37;"><input type="button" value="30&#36;" ></div>
+                <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/ohotdh.jpg" alt="ERROR"><input  type="button" value="-30&#37;"><input type="button" value="24&#36;" ></div>
+                <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/pibook.jpg" alt="ERROR"><input  type="button" value="-35&#37;"><input type="button" value="44&#36;" ></div>
+            </div>
+		</section>
+		<section>
+			<details>
+				<summary>load more books</summary>
+                <div class="osnovaspoiler1">
+                    <div class="sails">
+                        <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/Spoiler_Sails/BearTown.jpg" alt="ERROR"><input type="button" value="-50&#37;"><input type="button" value="51&#36;" ></div>
+                        <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/Spoiler_Sails/EternSunsh.jpg" alt="ERROR"><input type="button" value="-40&#37;"><input type="button" value="34&#36;" ></div>
+                        <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/Spoiler_Sails/OnePunchVol12.png" alt="ERROR"><input type="button" value="-45&#37;"><input type="button" value="52&#36;" ></div>
+                        <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/Spoiler_Sails/MyHeroVol10.png" alt="ERROR"><input type="button" value="-60&#37;"><input type="button" value="25&#36;" ></div>
+                    </div>
+                    <div class="sails">
+                        <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/Spoiler_Sails/TheCircle.jpg" alt="ERROR"><input type="button" value="-30&#37;"><input type="button" value="28&#36;" ></div>
+                        <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/Spoiler_Sails/Secret_Mind.png" alt="ERROR"><input  type="button" value="-60&#37;"><input type="button" value="30&#36;" ></div>
+                        <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/Spoiler_Sails/MazeRun.jpg" alt="ERROR"><input  type="button" value="-30&#37;"><input type="button" value="24&#36;" ></div>
+                        <div class="sailsbook"><img src="../Images/Books/shab.png" alt="ERROR"><img src="../Images/Books/Spoiler_Sails/AnEye4.jpg" alt="ERROR"><input  type="button" value="-35&#37;"><input type="button" value="44&#36;" ></div>
+                    </div>
+                </div>
+			</details>
+		</section>
+		<section id="learnmainvideos">
+            <iframe id="videointr1" src="http://www.youtube.com/embed/cxPs2tVNB4w"
+                    width="600" height="424" frameborder="0">
+            </iframe>
+            <iframe id="videointr2" src="http://www.youtube.com/embed/1d-v6Ir8rJ4"
+                    width="600" height="424" frameborder="0">
+			</iframe>
+			<p>
+			watch this to become more excited.
+			</p>
+		</section>
+		<section>
+			<h3>
+			order a book
+			</h3>
+			<p>you can easily order any book right through this form,<br> our bot will send you the required information to the mail.
+			</p>
+			<form>
+				<fieldset>
+					<input type="text" placeholder="Your Name" required>
+					<input type="email" placeholder="Your Email" required>
+				</fieldset>
+				<fieldset>
+					<input type="text" placeholder="Requested Book" required>
+				</fieldset>
+				<fieldset>
+					<textarea rows="12" cols="60"></textarea>
+				</fieldset>
+				<fieldset>
+					<input type="submit" value="Send form">
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	<aside role="note" onclick="location.href='#header_main';">
+		<a href="#header_main">back to top</a>
+	</aside>
+	<footer id="contactinfomain" role="contentinfo">
+		<a href="https://www.youtube.com/prostopopez">prostopopez&copy;</a>
+		<address>Ulica Seregina 22-36</address>
+		<nav>
+			<ul>
+				<li><a href="#">something</a></li>
+				<li><a href="#">something</a></li>
+				<li><a href="#">something</a></li>
+				<li><a href="#">something</a></li>
+				<li><a href="#">something</a></li>
+			</ul>
+		</nav>
+		<nav>
+			<ul>
+				<li><a href="#home_menu_click">home</a></li>
+				<li><a href="#about_menu_click">about</a></li>
+				<li><a href="#">genres</a></li>
+				<li><a href="#learnmainvideos">learn</a></li>
+				<li><a href="#contactinfomain">contact</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

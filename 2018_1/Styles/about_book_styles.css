@@ -1,0 +1,459 @@
+/*---------------
+Основные стили
+----------------*/
+body{
+    margin:0;
+    padding:0;
+    background: url("../Images/BG/mainbg1.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+/*---------------
+Хедер
+----------------*/
+header[role="banner"]{
+    position: relative;
+    width:100%;
+    background: wheat;
+}
+header[role="banner"] img {
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15%;
+}
+header[role="banner"] input{
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border:0;
+    width:50%;
+    height: 200px;
+    font-size: 80px;
+    font-weight: bold;
+    background:linear-gradient(to top,#664200,#310000);
+    color:white;
+}
+header[role="banner"] input:hover {
+    background: #000;
+    cursor: pointer;
+    background: linear-gradient(to top, #1a4100, #410000);
+    color: wheat;
+}
+/*---------------
+Мейн
+----------------*/
+main{
+    position: relative;
+    width:100%;
+    height:1840px;
+}
+section:first-of-type{
+    position: relative;
+    background: #99ee91;
+    height:60%;
+}
+section:first-of-type>div:first-of-type{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width:80%;
+    height:100%;
+}
+.buy_about{
+    background: #ffffe0;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    float:right;
+    display:inline-block;
+    width:19.85%;
+    height: 99.5%;
+    border-right:0;
+    border-top:3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.buy_about h1{
+    display: block;
+    text-align: center;
+    color: #000000;
+    font-family: "Lobster";
+}
+.buy_about>div:first-of-type{
+    text-align: center;
+    font-family: "Anton";
+    position: absolute;
+    display: block;
+    width:100%;
+    height:85%;
+}
+.buy_about>div:first-of-type p{
+    display: block;
+    font-size: 25px;
+}
+.buy_about>div:first-of-type div p:nth-of-type(7){
+    padding-top: 430px;
+}
+.buy_about>div:first-of-type>div{
+    background: #ffdfe0;
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    width:49.47%;
+    height:100%;
+}
+.buy_about>div:first-of-type>div:first-of-type{
+    float: left;
+}
+.buy_about>div:first-of-type>div:nth-of-type(2){
+    float: right;
+}
+.buy_about>div:nth-of-type(2){
+    display: block;
+    position: absolute;
+    left:0;
+    top:91.535%;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.buy_about>div:nth-of-type(2) input{
+    width: 100%;
+    height: 100px;
+    border: 0;
+    color:wheat;
+    font-size:50px;
+    text-transform: uppercase;
+    font-family: "Anton";
+    background: black;
+}
+.buy_about>div:nth-of-type(2) input:hover{
+    background: darkslategrey;
+    cursor: pointer;
+    filter: invert(100%);
+}
+.book_big{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width:100%;
+    height:80%;
+    border-right:0;
+    border-top:3px solid black;
+    border-left:0;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+.book_big img{
+    margin-top: 6%;
+    width:30%;
+    height:80%;
+    border:5px solid black;
+}
+.other_ex{
+    background: rgba(234, 255, 248, 0.85);
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    width:80%;
+    height:19.2%;
+    border-right:3px solid black;
+    border-top:0;
+    border-left:0;
+    border-bottom: 3px solid black;
+}
+.other_exm:first-of-type{
+    margin-left: 0;
+}
+.other_exm{
+    display: inline-block;
+    background: black;
+    margin-left: 4.3%;
+    width:8%;
+    border:1px solid black;
+    opacity: 0.9;
+    filter: blur(0.5px);
+    height:180px;
+}
+.other_exm:hover{
+    filter: contrast(150%) hue-rotate(30deg);
+    cursor: pointer;
+    opacity: 1;
+}
+.chimg1{
+    width:100%;
+    height: inherit;
+}
+
+#commentaries_book{
+    position: relative;
+    background: white;
+    width:100%;
+    height:736px;
+}
+.ostavit_comment_book{
+    width:100%;
+    height:40%;
+    background: #60f5cf;
+}
+#zvezdochki{
+    position: absolute;
+    display: block;
+    top:28%;
+    left:7.5%;
+}
+#zvezdochki img{
+    height:40px;
+}
+#zvezdochki img:hover{
+    filter: drop-shadow(2px 2px 3px blue);
+    cursor:pointer;
+}
+.ostavit_comment_book fieldset, input[id$="zvezda_otziv1"]{
+    display: inline-block;
+}
+input[id$="zvezda_otziv1"]{
+    opacity: 1;
+}
+form,label[for="nickname_otziv1"],label[for="avka_otziv1"],input[id="submit_otziv1"],#nickname_otziv1,#avka_otziv1{
+    display: block;
+}
+label[for="nickname_otziv1"],label[for="avka_otziv1"]{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: "Anton";
+    font-size: 30px;
+    margin: 0 1% 1% 10%;
+}
+input[id="submit_otziv1"]{
+    margin-left: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Anton";
+    font-size: 25px;
+    border: 0;
+    border-radius: 10px;
+    background: wheat;
+    color:black;
+    width:20%;
+    height:14%;
+}
+input[id="submit_otziv1"]:hover{
+    background: black;
+    color:wheat;
+    cursor: pointer;
+}
+label[for="nickname_otziv1"]{
+    margin-top: 5%;
+}
+label[for="avka_otziv1"]{
+    margin-bottom: 5%;
+}
+#nickname_otziv1,#avka_otziv1{
+    width:80%;
+    height:30px;
+    font-family: "Lobster";
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.ostavit_comment_book form{
+    height:100%;
+    width:100%;
+}
+.ostavit_comment_book fieldset{
+    height:100%;
+    padding: 0;
+    margin: 0;
+    border: 0;    
+}
+.ostavit_comment_book fieldset:first-of-type{
+    box-shadow: inset 5px 5px black,
+    inset -5px -5px black;
+    width:30%;
+    float: left;
+}
+.ostavit_comment_book fieldset:nth-of-type(2){
+    width:70%;
+    float: right;
+}
+.ostavit_comment_book fieldset:nth-of-type(2) textarea{
+    width:97.62%;
+    height:89%;
+    resize:none;
+    font-family: "Lobster";
+    font-size: 25px;
+    padding: 15px 15px 15px 15px;
+    font-weight: bold;
+    margin: 0;
+    box-shadow: inset 5px 5px black,
+    inset -5px -5px black;
+    background: wheat;
+}
+.all_comment_book{
+    position: relative;
+    width:100%;
+    height:58.5%;
+    background: wheat;
+}
+.all_comment_book>div {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width:24.8%;
+    height:100%;
+}
+.all_comment_book>div>div{
+    overflow: hidden;
+    display: block;
+    width:100%;
+    height:33%;
+    margin-top: 1%;
+    background: linear-gradient(to right bottom,aquamarine,orange);
+}
+.all_comment_book>div>div>div>time{
+    display: block;
+    position: absolute;
+    font-family: "Anton";
+    font-size: 15px;
+    padding-left: 1%;
+}
+.all_comment_book>div>div>div>strong{
+    padding-left: 1%;
+    display: inline-block;
+    position: absolute;
+    font-family: "Anton";
+    font-size: 20px;
+}
+.all_comment_book>div>div p{
+    position: relative;
+    padding-left: 25%;
+    font-family: "Anton";
+    font-size: 18px;
+}
+.all_comment_book img{
+    width:20%;
+}
+/*---------------
+Футер
+----------------*/
+footer[role="contentinfo"]{
+    position: relative;
+    background: #030303;
+    width:100%;
+}
+footer[role="contentinfo"]>a,footer[role="contentinfo"] nav,footer[role="contentinfo"] address{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer[role="contentinfo"]>a{
+    text-decoration: none;
+    font-family:"Lobster";
+    font-size:20px;
+    font-weight: 400;
+    color:wheat;
+    margin:0px 20% 0px 20%;
+}
+footer[role="contentinfo"]>address{
+    font-family:"Lobster";
+    font-size:20px;
+    font-weight: 400;
+    color:lightgreen;
+    vertical-align: middle;
+}
+footer[role="contentinfo"] a:hover{
+    color:#02a12a;
+}
+footer[role="contentinfo"] nav:first-of-type{
+    margin-left:18%;
+}
+footer[role="contentinfo"] nav:nth-of-type(2){
+    margin-left:6%;
+}
+footer[role="contentinfo"] nav ul{
+    list-style-type: none;
+}
+footer[role="contentinfo"] nav a{
+    text-decoration: none;
+    font-family:"Anton";
+    font-size:20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:wheat;
+}
+footer[role="contentinfo"] nav a:hover{
+    color:#02a12a;
+}
+/*---------------
+Медиа-запросы
+----------------*/
+@media screen and (max-width: 640px){
+    footer[role="contentinfo"]>a,footer[role="contentinfo"]>address,footer[role="contentinfo"] nav a{
+        font-size:8px;
+    }
+    footer[role="contentinfo"] nav:first-of-type{
+        margin-left:2%;
+    }
+    footer[role="contentinfo"] nav:nth-of-type(2){
+        margin-left:4%;
+    }
+    footer[role="contentinfo"]>a{
+        margin:0px 10% 0px 10%;
+    }
+    header[role="banner"] img {
+        width: 15%;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 1%;
+    }
+    header[role="banner"] input {
+        font-size: 20px;
+        height: 30px;
+    }
+}
+@media screen and (min-width: 670px) and (max-width:855px){
+    footer[role="contentinfo"]>a,footer[role="contentinfo"]>address,footer[role="contentinfo"] nav a{
+        font-size:10px;
+    }
+    footer[role="contentinfo"] nav:first-of-type{
+        margin-left:10%;
+    }
+    footer[role="contentinfo"] nav:nth-of-type(2){
+        margin-left:6%;
+    }
+    footer[role="contentinfo"]>a{
+        margin:0px 15% 0px 15%;
+    }
+    header[role="banner"] input{
+        font-size: 35px;
+        height:50px;
+    }
+}
+@media screen and (min-width:856px) and (max-width:1280px){
+    header[role="banner"] input{
+        font-size: 60px;
+        height:100px;
+    }
+}
+@media screen and (min-width:856px) and (max-width:1450px) {
+    footer[role="contentinfo"] > a, footer[role="contentinfo"] > address, footer[role="contentinfo"] nav a {
+        font-size: 15px;
+    }
+
+    footer[role="contentinfo"] nav:first-of-type {
+        margin-left: 10%;
+    }
+
+    footer[role="contentinfo"] nav:nth-of-type(2) {
+        margin-left: 6%;
+    }
+
+    footer[role="contentinfo"] > a {
+        margin: 0px 15% 0px 15%;
+    }
+}
