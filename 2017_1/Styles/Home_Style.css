@@ -1,0 +1,263 @@
+/*-------------------
+ Основные настройки
+ --------------------*/
+body{
+    margin:0 auto;
+    padding:0;
+    width:1600px;
+}
+/*-------------------
+ Шрифты
+--------------------*/
+@font-face{
+    font-family: raleway-semibold;
+    src: url("../Fonts/raleway-semibold.ttf");
+}
+@font-face{
+    font-family: Pacifico;
+    src: url("../Fonts/Pacifico.ttf");
+}
+@font-face{
+    font-family:helveticaneuecyr-medium;
+    src:url("../Fonts/helveticaneuecyr-medium.otf");
+}
+/*-------------------
+ Заголовок
+--------------------*/
+header{
+    border-top:11px solid #2ecc71;
+    height:600px;
+    background: url("../Images/Ekran.png") 965.5px 172.5px no-repeat,url("../Images/Slider.png") no-repeat;
+}
+header>div{
+    padding-left: 320px;
+    padding-top:155px;
+}
+header div div:first-child{
+    font-family: "Pacifico";
+    font-size:55px;
+    color:#ffffff;
+}
+header div div:first-child b{
+    color:#2ecc71;
+}
+header div div:nth-child(2){
+    margin-top:30px;
+    font-family: "helveticaneuecyr-medium";
+    font-size:20px;
+    color:#ffffff;
+}
+#select_windows div{
+    display:inline-block;
+    margin-right:15px;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+#select_windows div img{
+    vertical-align: 50px;
+    padding-top:12px;
+}
+#select_windows div:hover{
+    background-color: rgba(46, 204, 113,0.7);;
+}
+/*-------------------
+ Секция 1
+--------------------*/
+main section:first-child{
+    height:360px;
+    background-color: #ffffff;
+}
+main section:first-child>div{
+    display:inline-block;
+}
+main section:first-child>div:first-child{
+    display:inline-block;
+    margin-left:200px;
+}
+main section:first-child div>div {
+    display: block;
+    margin-right:100px;
+}
+.okoshki{
+    margin-top:60px;
+    margin-left:120px;
+    width:102px;
+    height:102px;
+    border-radius:50px;
+    background-color: #2ecc71;
+    text-align: center;
+}
+main section:first-child img{
+    width:50%;
+    height:50%;
+    vertical-align:50px;
+    padding-top:24px;
+}
+.Text{
+    padding-top: 30px;
+    font-family: "raleway-semibold";
+    color:#222222;
+    font-size:20px;
+    width:330px;
+    font-weight: bold;
+    text-align: center;
+}
+.SmallText{
+    font-weight: lighter;
+    line-height: 2;
+    padding-top: 30px;
+    font-family: "helveticaneuecyr-medium";
+    font-size:14px;
+    color:#8c8c8c;
+    width:330px;
+    text-align: center;
+}
+/*-------------------
+ Секция 2
+--------------------*/
+main section:nth-child(2){
+    height:428px;
+    background-color: #e3e3e3;
+}
+main section:nth-child(2) div>div{
+    display: inline-block;
+    padding-top:50px;
+}
+main section:nth-child(2) div>div:first-child{
+    margin-left:220px;
+    margin-right: 230px;
+    float:left;
+}
+main section:nth-child(2) div>div:first-child h1{
+    font-family:"raleway-semibold";
+    color:#222222;
+    font-size:20px;
+}
+main section:nth-child(2) div>div:first-child p {
+    font-family: "helveticaneuecyr";
+    color: #848484;
+    font-size: 14px;
+    line-height: 2;
+}
+main section:nth-child(2) div>div:first-child input[type="email"]{
+    float:left;
+    height:50px;
+    border: 1px solid #c8c8c8;
+    width:275px;
+    padding-left:30px;
+    border-radius: 20px 0px 0px 20px;
+    font-family:"helveticaneuecyr";
+    font-size: 14px;
+    color:green;
+}
+main section:nth-child(2) div>div:first-child input[type="button"]{
+    font-family:"raleway-semibold";
+    background-color: #2ecc71;
+    color:#fff;
+    font-size:20px;
+    height:52px;
+    border: 1px solid #c8c8c8;
+    width:143px;
+    border-radius: 0px 20px 20px 0px;
+}
+main section:nth-child(2) div>div:first-child input[type="button"]:hover{
+    background-color: black;
+}
+main section:nth-child(2) div>div:nth-child(2) img{
+    width:440px;
+    height:280px;
+    border-radius: 10px;
+}
+/*-------------------
+ Секция 3
+--------------------*/
+main section:nth-child(3){
+    height:466px;
+    background-color: #ffffff;
+}
+main section:nth-child(3) div:first-child {
+    color: #848484;
+    font-family:"helveticaneuecyr";
+    font-size:14px;
+    padding-top:56px;
+    text-align: center;
+}
+main section:nth-child(3) h2:nth-child(2) {
+    color: #2e2e2e;
+    font-family:"raleway-semibold";
+    font-weight: bold;
+    font-size:18px;
+    text-align: center;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+main section:nth-child(3) div:nth-child(3){
+    text-align:center;
+}
+main section:nth-child(3) h2:nth-child(4) {
+    color: #000;
+    font-family:"raleway-semibold";
+    font-size:22px;
+    text-align: center;
+    margin-top:60px;
+}
+main section:nth-child(3) div:nth-child(5) {
+    color: #848484;
+    font-family:"helveticaneuecyr";
+    font-size:14px;
+    text-align: center;
+}
+main section:nth-child(3) div:nth-child(6){
+    text-align:center;
+    display: block;
+}
+main section:nth-child(3) div:nth-child(6)>div{
+    margin-top:30px;
+    margin-right:10px;
+    display: inline-block;
+    border-radius: 50px;
+    width:30px;
+    height:30px;
+    background-color: #d4d4d4;
+    vertical-align: text-top;
+    padding-top:0px;
+}
+main section:nth-child(3) div:nth-child(6)>div:hover{
+    background-color: #62d995;
+}
+main section:nth-child(3) div:nth-child(6)>div img{
+    padding-top:8px;
+}
+main section:nth-child(3) div:nth-child(6)>div:nth-child(2) img{
+    padding-top:5.5px;
+}
+main section:nth-child(3) div:nth-child(6)>div:nth-child(3) img{
+    padding-top:6px;
+}
+main section:nth-child(3) div:nth-child(6)>div:nth-child(6) img{
+    padding-top:4px;
+}
+/*-------------------
+ Футер
+--------------------*/
+footer{
+    text-align: center;
+    height:130px;
+    background-color: #e3e3e3;
+}
+footer nav{
+    padding-top:58px;
+}
+footer a{
+    text-decoration: none;
+    color:#848484;
+    font-family:"HelveticaNeueCyr";
+    margin-left:40px;
+    font-size:16px;
+}
+footer a:hover{
+    color:black;
+}
