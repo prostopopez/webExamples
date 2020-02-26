@@ -1,0 +1,429 @@
+/*------------------
+Основные стили
+-------------------*/
+body{
+    margin:0 auto;
+    width:800px;
+}
+/*------------------
+Шрифты
+-------------------*/
+@font-face {
+    font-family: "Open Sans Semibold";
+    src: url("../Fonts/Open Sans Semibold.ttf");
+}
+@font-face {
+    font-family: "Ubuntu Bold";
+    src: url("../Fonts/Ubuntu Bold.ttf");
+}
+@font-face {
+    font-family: "Belinda";
+    src: url("../Fonts/Belinda.otf");
+}
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url("../Fonts/PT Sans Bold.ttf");
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url("../Fonts/PT Sans.ttf");
+}
+@font-face {
+    font-family: "Nexa Light";
+    src: url("../Fonts/Nexa Light.otf");
+}
+@font-face {
+    font-family: "cabin-regular";
+    src: url("../Fonts/cabin-regular.ttf");
+}
+/*------------------
+Хедер
+-------------------*/
+header{
+    height:588px;
+    background-image: url("../Images/Head_Back.png");
+}
+header>div{
+    text-align: center;
+}
+header>div:first-child{
+    font-family: "Belinda";
+    color:#fff;
+    font-size: 56px;
+    padding-top:52px;
+    padding-bottom:38px;
+}
+header nav{
+
+    text-align: center;
+}
+header nav div{
+    display: inline-block;
+    margin-left:30px;
+}
+header nav a{
+    font-family:"Ubuntu Bold";
+    text-decoration: none;
+    color:#d5dbdc;
+    font-size:14px;
+    font-weight: lighter;
+}
+header nav a:hover{
+    color:yellowgreen;
+}
+header>div:nth-child(3){
+    padding-top:74px;
+    font-family: "Open Sans Semibold";
+    font-size:50px;
+    color:#fff;
+}
+header>div:nth-child(4){
+    padding-top: 38px;
+    padding-bottom: 74px;
+    font-family: "PT Sans Bold";
+    font-size: 14px;
+    color:#fff;
+}
+header>div:nth-child(5) input{
+    border-radius: 50px;
+    border:0px;
+    width:239px;
+    height: 48px;
+    font-size: 14px;
+    background-color: #50c3af;
+    color:#f5f5f5;
+    font-family: "PT Sans Bold";
+}
+header>div:nth-child(5) input:hover{
+    background-color: yellowgreen;
+    color: black;
+}
+/*------------------
+Секция 1
+-------------------*/
+main section:first-child{
+    height:286px;
+    background-color: #eeeeef;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+main section:first-child>div{
+    display: inline-block;
+    margin-left:30px;
+    text-align: center;
+    padding-top: 62px;
+}
+main section:first-child>div h1{
+    padding-top: 5px;
+    padding-bottom: 30px;
+    color:#2e3237;
+    font-size:16px;
+    font-family: "PT Sans Bold";
+}
+main section:first-child>div div{
+    color: #48504d;
+    font-size:14px;
+    font-family: "PT Sans";
+}
+/*------------------
+Секция 2
+-------------------*/
+main section:nth-child(2){
+    height:530px;
+    background-color: #f5f5f5;
+    padding-left:95px;
+    padding-right: 95px;
+}
+main section:nth-child(2)>div{
+    display: inline-block;
+    margin-left:38px;
+    text-align: left;
+    padding-top: 65px;
+}
+main section:nth-child(2)>div h1{
+    font-family: "PT Sans Bold";
+    color:#40474e;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+main section:nth-child(2)>div div{
+    font-family: "PT Sans";
+    color:#787b80;
+    font-size: 14px;
+    padding-bottom: 28px;
+    line-height: 1.8;
+}
+main section:nth-child(2)>div input{
+    font-family: "PT Sans";
+    height:36px;
+    width:100px;
+    border-radius: 50px;
+    border:0px;
+    background-color: #50c3af;
+    color:#f5f5f5;
+    font-size:14px;
+}
+main section:nth-child(2)>div input:hover{
+    background-color: yellowgreen;
+    color: black;
+    font-weight: bold;
+}
+main section:nth-child(2) hr{
+    color:#dadada;
+    background-color: #dadada;
+    opacity: 0.2;
+    margin-top:5px;
+    height: 2px;
+}
+/*------------------
+Секция 3
+-------------------*/
+main section:nth-child(3){
+    height:332px;
+    background-color: #eeeeef;
+    padding-left:120px;
+    padding-right: 115px;
+}
+main section:nth-child(3) img{
+    padding-top: 50px;
+    padding-right: 10px;
+}
+main section:nth-child(3) h1{
+    display: inline-block;
+    color:#384048;
+    font-size: 20px;
+    font-family: "PT Sans Bold";
+}
+main section:nth-child(3) div {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #5d6468;
+    font-family: "PT Sans";
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+main section:nth-child(3) hr{
+    margin-left: 0px;
+    width:350px;
+    color:#dadada;
+    background-color: #dadada;
+    opacity: 0.2;
+    margin-top:5px;
+    height: 2px;
+}
+main section:nth-child(3) input{
+    margin-left: 10px;
+    font-family: "PT Sans";
+    height:36px;
+    width:100px;
+    border-radius: 50px;
+    border:0px;
+    background-color: #625f5d;
+    color: #19ff15;
+    font-size:14px;
+    font-weight: bold;
+}
+main section:nth-child(3) input:hover{
+    background-color: yellowgreen;
+    color: black;
+    font-weight: bold;
+}
+/*------------------
+Секция 4
+-------------------*/
+main section:nth-child(4){
+    height:444px;
+    background-color: #f5f5f5;
+    padding-left:100px;
+    padding-right: 100px;
+}
+main section:nth-child(4)>div{
+    display: inline-block;
+    margin-left:15px;
+    text-align: left;
+    padding-top: 58px;
+}
+main section:nth-child(4)>div img{
+    width:180px;
+    height:140px;
+}
+main section:nth-child(4)>div h1{
+    font-family: "PT Sans Bold";
+    color:#40474e;
+    font-size: 18px;
+    padding-top: 15px;
+}
+main section:nth-child(4) hr{
+    color:#dadada;
+    background-color: #dadada;
+    opacity: 0.2;
+    height: 2px;
+}
+main section:nth-child(4)>div div:nth-child(3){
+    font-family: "PT Sans";
+    color: #616267;
+    font-size: 14px;
+    padding-bottom: 22px;
+    line-height: 1.8;
+}
+main section:nth-child(4)>div div:nth-child(4){
+    padding-left: 3px;
+}
+main section:nth-child(4)>div div:nth-child(4) a{
+    color:#50c3af;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: "PT Sans";
+    text-decoration: none;
+}
+main section:nth-child(4)>div div:nth-child(4) a:hover{
+    color:darkviolet;
+}
+/*------------------
+Секция 5
+-------------------*/
+main section:nth-child(5){
+    height:320px;
+    background-color: #eeeeef;
+    padding-left:60px;
+    padding-right: 60px;
+}
+main section:nth-child(5)>div{
+    display: inline-block;
+    margin-left:70px;
+    text-align: left;
+    padding-top: 60px;
+}
+main section:nth-child(5) img{
+    padding-right: 10px;
+    padding-left: 0px;
+}
+main section:nth-child(5) h1{
+    display: inline-block;
+    color:#384048;
+    font-size: 20px;
+    font-family: "PT Sans Bold";
+}
+main section:nth-child(5)>div div {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #5d6468;
+    font-family: "PT Sans";
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+main section:nth-child(5) hr{
+    margin-left: 0px;
+    width:250px;
+    color:#dadada;
+    background-color: #dadada;
+    opacity: 0.2;
+    margin-top:5px;
+    height: 2px;
+}
+main section:nth-child(5)>div input{
+    font-family: "PT Sans";
+    height:36px;
+    width:100px;
+    border-radius: 50px;
+    border:0px;
+    background-color: #50c3af;
+    color:#f5f5f5;
+    font-size:14px;
+}
+main section:nth-child(5)>div input:hover{
+    background-color: yellowgreen;
+    color: black;
+    font-weight: bold;
+}
+/*------------------
+Секция 6 ( пробел )
+-------------------*/
+main section:nth-child(6){
+    height:333px;
+    background-color: #f5f5f5;
+}
+/*------------------
+ Футер
+-------------------*/
+footer>div:first-child {
+    background-color:#50c3af;
+    height: 222px;
+}
+footer>div:first-child{
+    text-align: center;
+}
+footer>div:first-child>img,footer>div:first-child>div:nth-child(2){
+    padding-right: 5px;
+    display: inline-block;
+}
+footer>div:first-child >div:nth-child(2){
+    color:#ffffff;
+    font-family: "PT Sans Bold";
+    font-size: 18px;
+}
+footer>div:first-child hr{
+    width:350px;
+    color:#dadada;
+    background-color: #dadada;
+    opacity: 0.2;
+    margin-top:20px;
+    height: 2px;
+}
+footer>div:first-child >div:nth-child(4){
+    padding-left: 0px;
+    padding-right: 80px;
+}
+footer>div:first-child >div:nth-child(4) div{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 50px;
+    color:#cbede7;
+}
+footer>div:first-child >div:nth-child(4) div:first-child{
+    font-family:"Belinda";
+    font-size: 24px;
+}
+footer>div:first-child >div:nth-child(4) div:nth-child(2){
+    font-family:"Nexa Light";
+    font-size: 24px;
+}
+footer>div:first-child >div:nth-child(4) div:nth-child(3){
+    font-family:"cabin-regular";
+    font-size: 24px;
+}
+footer>div:first-child >div:nth-child(4) div:nth-child(4){
+    font-family:"Nexa Light";
+    font-weight: bold;
+    font-size: 24px;
+}
+footer>div:nth-child(2){
+    height:56px;
+    background-color:#f5f5f5;
+}
+footer>div:nth-child(2)>div{
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+footer>div:nth-child(2)>div:first-child{
+    font-family: "PT Sans";
+    font-size:12px;
+    color: #999b9d;
+    padding-top: 20px;
+    vertical-align: 5px;
+}
+footer>div:nth-child(2)>div:first-child strong{
+    color:#787b80;
+    font-size: 14px;
+}
+footer>div:nth-child(2)>div:nth-child(2){
+    padding-left: 102px;
+}
+footer>div:nth-child(2)>div:nth-child(2) img{
+    margin-left: 10px;
+}
+footer>div:nth-child(2)>div:nth-child(2) img:hover{
+    opacity: 0.5;
+}

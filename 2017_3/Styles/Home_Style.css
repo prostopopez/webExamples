@@ -1,0 +1,474 @@
+﻿/*----------------------
+  Основные селекторы
+  ----------------------*/
+body {
+    margin: 0;
+}
+table{
+    margin: auto;
+    width:1280px;
+}
+.td_lkrai{
+    padding-left:128px;
+}
+.td_prkrai{
+    padding-right:128px;
+}
+/*----------------------
+  Верхнее меню
+  ----------------------*/
+#Minimal{
+padding-left:35px;
+}
+#Minimal strong:nth-child(2){
+    vertical-align:super;
+    font-weight: bold;
+    font-family:"Segoe UI Light";
+    font-size:19pt;
+    padding-right:35px;
+    color: #149494;
+}
+#Minimal strong:first-child{
+    padding-left:5px;
+    padding-right:5px;
+    font-family:"Segoe UI Light";
+    background: linear-gradient(to bottom,#42eee3 1%,#1eb9af 16.6%,#2ee2d6 16.7%,#1eb9af 33.2%,#1fd0c4 33.3%,#0eb0a5 48.8%,#17c0b5 48.9%,#21a39a 65.4%, #0eb0a5 65.5%,#0eb0a5 82%,#0aa096 82.1%);
+    font-size:35pt;
+    color:#fff;
+}
+.menu_del,.prmenu_del,.amenu_del{
+    border-left:2px solid #8e8e8e;
+    font-weight: bold;
+    font-family:"Segoe UI Light";
+    font-size:19pt;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    height: 99px;
+    color: #8e8e8e;
+}
+.menu_del a,.prmenu_del a,.amenu_del a{
+    color: #8e8e8e;
+    text-decoration: none;
+}
+.menu_del a:hover,.prmenu_del a:hover,.amenu_del a:hover{
+    color: #666;
+    font-color:black;
+    font-weight:bolder;
+    text-decoration: none;
+}
+.prmenu_del {
+}
+.amenu_del{
+    border-left:1px solid #fff;
+}
+.td_probel{
+    width:470px;
+}
+/*----------------------
+  Телефон+текст
+  ----------------------*/
+#blue_fon{
+    background:linear-gradient(to right bottom,#00767e 1%,#00767e 25%,#0fc6b0 60%,#0fc6b0 100%);
+    height:539px;
+}
+#blue_fon svg:first-child{
+    padding-top:40px;
+    padding-left:100px;
+    width:455px;
+    height:455px;
+}
+#blue_fon svg:first-child circle:first-child{
+    cx:125px;
+    cy:220px;
+    r:225px;
+    fill:url(#MyGradient1);
+}
+#blue_fon svg:first-child circle:nth-child(2){
+    cx:125px;
+    cy:220px;
+    r:200px;
+    fill:url(#MyGradient2);
+}
+#blue_fon svg:first-child circle:nth-child(3){
+    cx:125px;
+    cy:220px;
+    r:170px;
+    fill:url(#MyGradient3);
+}
+#blue_fon svg:first-child rect:nth-child(4){
+    rx:20;
+    fill: #fff;
+    width:256px;
+    height:446px;
+}
+#blue_fon svg:first-child rect:nth-child(5){
+    x:5px;
+    y:5px;
+    rx:20;
+    width:246px;
+    height:436px;
+    fill:#efefef;
+}
+#blue_fon svg:first-child rect:nth-child(6){
+    x:20px;
+    y:55px;
+    width:214px;
+    height:315px;
+    fill:#4b4b4b;
+}
+#blue_fon svg:first-child rect:nth-child(7){
+    x:27px;
+    y:62px;
+    width:200px;
+    height:301px;
+    fill:#303030;
+}
+#blue_fon svg:first-child rect:nth-child(8){
+    x:100px;
+    y:28px;
+    rx:5px;
+    width:50px;
+    height:8px;
+    fill:#a9a9a9;
+}
+#blue_fon svg:first-child rect:nth-child(9){
+    x:103px;
+    y:30px;
+    rx:5px;
+    width:44px;
+    height:4px;
+    fill:#90908a;
+}
+#blue_fon svg:first-child circle:nth-child(10){
+    cx:125px;
+    cy:405px;
+    r:26px;
+    fill:#aaaaaa;
+}
+#blue_fon svg:first-child circle:nth-child(11){
+    cx:125px;
+    cy:405px;
+    r:22px;
+    fill:#e3e3e3;
+}
+#blue_fon td:nth-child(4) img:first-child{
+    width:57px;
+    height:57px;
+    float:left;
+    padding-top:7px;
+    padding-right:10px;
+}
+#blue_fon td:nth-child(4) span:nth-child(2){
+    font-family:"Segoe UI Light";
+    font-size: 18pt;
+    font-weight: bold;
+    color:#def4f2;
+}
+#blue_fon td:nth-child(4) svg:nth-child(4){
+    height:90px;
+    width:0px;
+}
+#blue_fon td:nth-child(4) span:nth-child(5){
+    font-family:"Segoe UI Light";
+    font-size: 30pt;
+    color:#ffffff;
+}
+#blue_fon td:nth-child(4) span:nth-child(7){
+    font-family:"Segoe UI Light";
+    font-size: 13pt;
+    color:#cff3ef;
+    font-weight: bold;
+    padding-left: 8px;
+}
+#blue_fon td:nth-child(4) svg:nth-child(9){
+    height:80px;
+    width:0px;
+}
+#blue_fon td:nth-child(4) svg:nth-child(10){
+    height:46px;
+    width:170px;
+}
+#blue_fon td:nth-child(4) svg:nth-child(10) rect:first-child{
+    width:53px;
+    height:46px;
+    fill:#259d8e;
+}
+#blue_fon td:nth-child(4) svg:nth-child(10) rect:nth-child(2){
+    x:53px;
+    width:117px;
+    height:46px;
+    fill:#54d3c3;
+}
+#blue_fon td:nth-child(4) img:nth-child(11){
+    margin-left:-160px;
+    padding-right:22px;
+    width:27px;
+    height:29px;
+    vertical-align: 8px;
+}
+#blue_fon td:nth-child(4) a:nth-child(12){
+     text-decoration: none;
+ }
+#blue_fon td:nth-child(4) a:nth-child(12) span{
+    vertical-align: 16px;
+    font-family:"Segoe UI Light";
+    font-size: 18pt;
+    color:#e8f9f7;
+}
+#blue_fon td:nth-child(5),#blue_fon td:nth-child(6){
+    padding-bottom:400px;
+    position:absolute;
+}
+#blue_fon td:nth-child(5) img,#blue_fon td:nth-child(6) img{
+    width:80px;
+    height:80px;
+}
+#blue_fon td:nth-child(6) {
+    padding-left: 80px;
+}
+#blue_fon td:nth-child(7){
+    padding-bottom:442px;
+    padding-left: 158px;
+}
+#blue_fon td:nth-child(7) img {
+    width: 80px;
+    height: 88px;
+}
+#blue_fon td:nth-child(6) img:hover,#blue_fon td:nth-child(7) img:hover{
+   opacity: 0.5;
+}
+/*----------------------
+  Кружок+общая инф
+  ----------------------*/
+#white_text{
+    background-color:#ffffff;
+    height:754px;
+}
+#white_text tr:first-child{
+    height:215px;
+    vertical-align: super;
+    padding-top:0px;
+}
+#white_text tr:first-child td:nth-child(2) p:first-child{
+     text-align:center;
+     font-family:"Segoe UI Light";
+     font-size:34pt;
+     color:#636363;
+ }
+#white_text tr:first-child td:nth-child(2) p:first-child~p{
+    text-align:center;
+    font-family:"-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);";
+    font-size:12.5pt;
+    color:#9f9f9f;
+}
+#white_text tr:nth-child(2){
+    background: url("../Images/Krujok.png") 50% no-repeat;
+    padding-bottom: 60px;
+}
+#white_text tr:nth-child(2) td:nth-child(2) span:nth-child(3){
+    font-family: "KodchiangUPC Bold";
+    color:#fff;
+    font-size:80px;
+    padding-left:400px;
+}
+#white_text tr:nth-child(2) td:nth-child(2) span:nth-child(5){
+    font-family: "KodchiangUPC Bold";
+    font-weight: normal;
+    color:#fff;
+    font-size:34px;
+    padding-left:395px;
+    vertical-align: 130px;
+}
+#white_text tr:nth-child(2) td:nth-child(2) svg{
+    padding-left:435px;
+    width:74px;
+    height:106px;
+    padding-bottom:15px;
+}
+#white_text tr:nth-child(2) td:nth-child(2) svg rect:first-child{
+     rx:12;
+     width:74px;
+     height:106px;
+     fill:#fff;
+ }
+#white_text tr:nth-child(2) td:nth-child(2) svg rect:nth-child(2){
+    x:6px;
+    y:20px;
+    width:62px;
+    height:66px;
+    fill:#079491;
+}
+#white_text tr:nth-child(2) td:nth-child(2) svg rect:nth-child(3){
+    rx:5;
+    x:24px;
+    y:8px;
+    width:22px;
+    height:3px;
+    fill:#079491;
+}
+#white_text tr:nth-child(2) td:nth-child(2) svg circle{
+    cx:37px;
+    cy:96px;
+    r:7px;
+    fill:#079491;
+}
+#white_text tr:nth-child(2) td:nth-child(2) svg rect:nth-child(5){
+    rx:1;
+    x:33.5px;
+    y:92.5px;
+    width:7px;
+    height:7px;
+    fill:#fff;
+}
+/*----------------------
+  Красивые кнопочки
+  ----------------------*/
+#knopochki{
+    height:170px;
+}
+#knopochki{
+    background:linear-gradient(to right,#1da0aa 1%,#097b84 16.67%,#118f99 33.33%,#1da0aa 50%,#29b7c2 66.66%, #3ccad5 83.3%) ;
+}
+#knopochki td:first-child{
+    background-color: #01646c;
+    width:16.5%;
+}
+#knopochki td:nth-child(2){
+    background-color: #097b84;
+    width:16.5%;
+}
+#knopochki td:nth-child(3){
+    background-color: #118f99;
+    width:16.5%;
+}
+#knopochki td:nth-child(4){
+    background-color: #1da0aa;
+    width:16.5%;
+}
+#knopochki td:nth-child(5){
+    background-color: #29b7c2;
+    width:16.5%;
+}
+#knopochki td:nth-child(6){
+    background-color: #3ccad5;
+    width:16.5%;
+}
+#knopochki td img{
+    padding-left:34%;
+}
+#knopochki{
+    background:linear-gradient(to right,#01646c 1%,#01646c 16% ,#09a297);;
+}
+#knopochki td:hover{
+    opacity:0.5;
+}
+/*----------------------
+  Ноутбук
+  ----------------------*/
+#noutbuk{
+    height:528px;
+    background:linear-gradient(to right,#01646c 1%,#01646c 16% ,#09a297);
+}
+#noutbuk td{
+    padding-top:190px;
+    padding-left:174px;
+}
+#noutbuk svg{
+    width:558px;
+    height:330px;
+}
+#noutbuk svg rect:first-child{
+    x:76px;
+    y:0px;
+    width:412px;
+    height:260px;
+    fill:#efefef;
+}
+#noutbuk svg rect:nth-child(2){
+    x:92px;
+    y:20px;
+    width:378px;
+    height:220px;
+    fill:#2a2a2a;
+}
+#noutbuk svg polygon{
+    fill:#c2c2c2;
+}
+#noutbuk svg rect:nth-child(4){
+    X:0px;
+    y:316px;
+    width:558px;
+    height:20px;
+    fill:#4b4b4b;
+}
+#noutbuk svg rect:nth-child(5){
+    X:149px;
+    y:30px;
+    width:264px;
+    height:200px;
+    fill:#fffff5;
+}
+#noutbuk g rect:first-child{
+    X:154px;
+    y:35px;
+    width:254px;
+    height:190px;
+    fill:#002333;
+}
+#noutbuk g text:nth-child(2){
+    X:154px;
+    y:55px;
+    fill:red;
+    font-family:"Verdana";
+    font-size:10px;
+}
+/*----- -----------------
+  60% проекта
+  ----------------------*/
+#projectss{
+    height:512px;
+    border-bottom:1px solid #dedede;
+}
+#projectss tr td:first-child{
+    background-color: #ffffff;
+    width:786px;
+    font-family: "Segoe UI";
+    font-size:75pt;
+    color:#49d7b0;
+}
+#projectss tr td:first-child span{
+    font-weight: bolder;
+    padding-left:260px;
+}
+#projectss tr td:first-child p:nth-child(3){
+    padding-left:150px;
+    font-size:70px;
+}
+#projectss tr td:first-child p:nth-child(4){
+    padding-left:150px;
+    font-size:70px;
+    vertical-align: 50px;
+}
+#projectss tr td:nth-child(2){
+    background-color: #49d7b0;
+    width:494px;
+}
+#projectss tr td:nth-child(2) img{
+    padding-left:150px;
+}
+#projectss tr td:nth-child(2) img:hover{
+   padding-left:120px;
+   width:300px;
+   height:300px;
+}
+/*----------------------
+ Футер
+ ----------------------*/
+#footer{
+    height: 100px;
+}
+#footer tr td{
+    text-align: center;
+    color:#a6a6a6;
+}
