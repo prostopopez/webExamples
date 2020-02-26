@@ -1,0 +1,905 @@
+/*-------------------------------------------------
+                Подключение шрифтов
+---------------------------------------------------*/
+@font-face{
+    font-family: 'RuslanDisplay';
+    src: url('../fonts/RuslanDisplay.ttf');
+    src: url('../fonts/RuslanDisplay.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Anton-Regular';
+    src: url('../fonts/Anton-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lobster-Regular';
+    src: url('../fonts/Lobster-Regular.ttf');
+}
+/*-------------------------------------------------
+                    Общие стили
+---------------------------------------------------*/
+body{
+    background: rgba(234, 220, 214, 0.53) !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Anton-Regular" !important;
+}
+p,.p{
+    font-size: 20px ;
+    font-family:"Lobster-Regular" ;
+    color: #292929;
+    font-weight:500;
+}
+.navbar.fixed-top+*{
+    margin-top: 71px !important;
+}
+.breadcrumb{
+    background-color: #ccffc1 !important;
+}
+/*-------------------------------------------------
+                     Прелоадер
+---------------------------------------------------*/
+.preloader{
+    position: fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background: #222;
+    z-index:1031 !important;
+
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+.preloader.done{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader {
+    top:45%;
+    left:30%;
+    position: absolute;
+    transform: translate(0%,-50%);
+    font-size: 0;
+    line-height: 1;
+}
+.prostopreload {
+    font-family:"Anton";
+    font-size:140px;
+    display: inline-block;
+    text-shadow: 0 0 0 cyan;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory-730x370.jpg);
+
+    animation: move 2s ease-in-out alternate-reverse infinite;
+}
+.prostopreload:first-child,.prostopreload:last-child{;
+    transform: translate(-10%,-50%);
+    font-size:180px;
+    text-shadow:5px 5px 15px #e700ff,
+    -5px -5px 15px #e700ff;
+}
+.prostopreload:nth-child(1) { animation-delay: 0s; }
+.prostopreload:nth-child(2) { animation-delay: 0.1s; }
+.prostopreload:nth-child(3) { animation-delay: 0.2s; }
+.prostopreload:nth-child(4) { animation-delay: 0.3s; }
+.prostopreload:nth-child(5) { animation-delay: 0.4s; }
+.prostopreload:nth-child(6) { animation-delay: 0.5s; }
+.prostopreload:nth-child(7) { animation-delay: 0.4s; }
+.prostopreload:nth-child(8) { animation-delay: 0.3s; }
+.prostopreload:nth-child(9) { animation-delay: 0.2s; }
+.prostopreload:nth-child(10) { animation-delay: 0.1s; }
+.prostopreload:nth-child(11) { animation-delay: 0s; }
+
+@keyframes move {
+    0% {
+        transform: translate(-10%, -50%);
+    }
+    50% {
+        text-shadow: 0 15px 40px rgba(255, 247, 83, 0.6);
+    }
+    100% {
+        transform: translate(10%, 50%);
+    }
+}
+/*-------------------------------------------------
+                    Стили header.php
+---------------------------------------------------*/
+.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark.fixed-top{
+    background-image: url("../images/dark-website-backgrounds-1.jpg");
+    background-repeat: repeat-x;
+    animation: animatedBackground 30s alternate-reverse infinite;
+    -moz-animation: animatedBackground 30s alternate-reverse infinite;
+    -webkit-animation: animatedBackground 30s alternate-reverse infinite;
+    -o-animation: animatedBackground 30s alternate-reverse infinite;
+}
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 600px; /* анимируем свойство background-position */
+    }
+}
+.navbar-brand{
+    font-size:30px;
+    color: wheat;
+    font-weight: bold;
+}
+#menu-main_menu {
+    list-style-type: none !important;
+    margin-bottom:0px;
+}
+#menu-main_menu>li {
+    display: inline-block;
+    margin-left:50px;
+}
+#menu-main_menu>li a {
+    color: wheat !important;
+    font-family: 'RuslanDisplay' !important;
+    font-weight: bold !important;
+    line-height: 0.8em !important;
+    letter-spacing: 0.1em !important;
+    transform: scaleY(0.7) !important;
+    -webkit-transform: scaleY(0.7) !important;
+    -moz-transform: scaleY(0.7) !important;
+    margin:0;
+    text-align: center;
+}
+#menu-main_menu>li a:hover{
+    text-decoration: none !important;
+    color: #a0ff98 !important;
+    filter: blur(0px);
+}
+.brand_popez {
+    display: inline-block;
+    text-shadow: 0 0 0 whitesmoke;
+    animation: smoky 1s alternate-reverse infinite;
+}
+.brand_popez:nth-child(even){
+    animation-name: smoky-mirror;
+}
+.brand_popez:first-child,.brand_popez:last-child{
+    animation-name: firstsmoky;
+}
+@keyframes smoky {
+    60% {
+        text-shadow: 0 0 40px whitesmoke;
+    }
+    to {
+        transform:
+                translate3d(3px,0rem,0)
+                rotate(10deg)
+                skewX(5deg)
+                scale(1.1);
+        text-shadow: 0 0 20px whitesmoke;
+        opacity: 0.5;
+    }
+}
+@keyframes smoky-mirror {
+    60% {
+        text-shadow: 0 0 40px whitesmoke; }
+    to {
+        transform:
+                translate3d(-3px,0rem,0)
+                rotate(-10deg)
+                skewX(-5deg)
+                scale(0.9);
+        text-shadow: 0 0 20px whitesmoke;
+        opacity: 0.5;
+    }
+}
+@keyframes firstsmoky{
+    to {
+        text-shadow: 0 0 10px whitesmoke;
+        color: wheat;
+    }
+}
+#navbarResponsive{
+    padding-left: 10%;
+}
+.navbar.fixed-top>.container{
+    width: auto;
+}
+/*-------------------------------------------------
+                  Стили footer.php
+---------------------------------------------------*/
+footer{
+    background: linear-gradient(#222, #13092e);
+}
+footer p{
+    font-family: Lobster;
+    font-weight: 500;
+}
+.popezauthor{
+    color:wheat;
+}
+.popezauthor:hover{
+    text-decoration: none;
+    color:orangered;
+}
+/*-------------------------------------------------
+               Стили поиска/search.php
+---------------------------------------------------*/
+.pagination ul {
+    margin-left:90px;
+}
+
+.pagination ul li {
+    float:left;
+    list-style:none;
+    color:black;
+    margin-left:10px;
+}
+
+.pagination ul li a {
+    background-color: rgb(250, 172, 5);
+    padding-left:6px;
+    padding-right:6px;
+    color: rgb(55, 58, 58);
+}
+
+.pagination ul li a:hover {
+    text-decoration:none;
+}
+/*-------------------------------------------------
+                 Стили index.php
+---------------------------------------------------*/
+.carousel-inner{
+    height:1000px;
+}
+.carousel-item{
+    height:100%;
+}
+.carousel-inner .carousel-caption p{
+    color: #fff2f7 !important;
+    text-shadow: 3px 3px 5px #000000,
+    1.5px 1.5px 3px wheat;
+    font-size:30px;
+    font-weight:bold;
+}
+/*-------------------------------------------------
+                 Стили page-skills.php
+---------------------------------------------------*/
+.skillname{
+    text-transform: uppercase;
+}
+#skills_range{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#skills_range .progress{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    background-color: rgb(60, 60, 60);
+}
+#skills_range .progress-bar{
+    font-size: 30px;
+    color: #222;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px wheat;
+}
+/*-------------------------------------------------
+               Стили page-biography.php
+---------------------------------------------------*/
+.aboutt-1:nth-child(even),.aboutt-2:nth-child(odd),.aboutt-3:nth-child(even){
+    background: linear-gradient(to bottom right, #6affcb,#cbff6a);
+}
+.aboutt-1:nth-child(odd),.aboutt-2:nth-child(even),.aboutt-3:nth-child(odd){
+    background: linear-gradient(to bottom right, #cbff6a, #6affcb);
+}
+div[class^="aboutt-"]{
+    transition: transform 3s;
+    filter: blur(3px) drop-shadow(1px 1px 1px blue) invert(75%) opacity(0.9);
+}
+div[class^="aboutt-"]:hover{
+    filter: blur(0px) drop-shadow(0px 0px 0px) invert(0%) opacity(1);
+    z-index:50;
+}
+div[class^="aboutt-"]:first-child:hover {
+    transform: translateX(555px) translateY(181px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(2):hover{
+    transform: translateX(277.5px) translateY(181px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(3):hover{
+    transform: translateX(-277.5px) translateY(181px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(4):hover{
+    transform: translateX(-555px) translateY(181px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(5):hover{
+    transform: translateX(555px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(6):hover{
+    transform: translateX(277.5px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(7):hover{
+    transform: translateX(-277.5px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(8):hover{
+    transform: translateX(-555px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(9):hover{
+    transform: translateX(555px) translateY(-181px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(10):hover{
+    transform: translateX(277.5px) translateY(-181px) scale(3);
+}
+div[class^="aboutt-"]:nth-child(11):hover{
+    transform: translateX(-277.5px) translateY(-181px) scale(3);
+}
+div[class^="aboutt-"]:last-child:hover{
+    transform: translateX(-555px) translateY(-181px) scale(3);
+}
+div[class^="aboutt-"] img{
+    display: inline-block;
+    width: 50px !important;
+    height: 50px !important;
+    vertical-align: top;
+}
+.about-content {
+    display: inline-block;
+    width: 240px;
+    margin-top: 55px;
+    margin-left: 5px;
+}
+.about-h{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+/*-------------------------------------------------
+              Стили archive-news.php
+---------------------------------------------------*/
+.news-img{
+    width:70%;
+    height:70%;
+}
+.news-card.card{
+    background-color: #ffd1ac !important;
+}
+/*-------------------------------------------------
+               Стили артикостраницы
+---------------------------------------------------*/
+/* fonts  */
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+#artcard{
+    box-shadow: 0 15px 30px 1px rgb(36, 36, 36);
+    background: rgba(255, 222, 242, 0.9);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 600px;
+    width: 820px;
+    margin-top: 135px;
+}
+/* 	Product details  */
+#artcard .product-details {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    padding: 30px;
+    height: 100%;
+    float: left;
+    width: 50%;
+}
+/* 	Product Name */
+#artcard .product-details h1, .eh{
+    font-family: 'Old Standard TT', serif;
+    display: inline-block;
+    position: relative;
+    font-size: 50px;
+    color: #344055;
+    margin: 0;
+    margin-left: 38.5%;
+}
+.eh{
+    margin-left: 44.5% !important;
+    margin-right: 44.5% !important;
+}
+#artcard .product-details h1:before{
+    position: absolute;
+    content: '';
+    right: 0%;
+    top: 0%;
+    transform: translate(25px, -15px);
+    font-family: 'Farsan', cursive;
+    display: inline-block;
+    background: #e2652b;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    color: #FFF;
+    margin: 0;
+    animation: chan-sh 6s ease infinite;
+
+}
+@keyframes chan-sh {
+    from  {content: 'Гарантия';}
+    to  {content: 'Новинка';}
+
+}
+/* The most important information about the product */
+#artcard .product-details > p {
+    padding-top: 80px;
+    font-family: 'Farsan', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: #7d7d7d;
+
+}
+/* control */
+#artcard .control{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+
+}
+/* the Button */
+#artcard .btn {
+    transform: translateY(0px);
+    transition: 0.3s linear;
+    background: #49C608;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+
+}
+#artcard .btn:hover{transform: translateY(-4px);}
+#artcard .btn span {
+    font-family: 'Farsan', cursive;
+    transition: transform 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin:0;
+
+}
+/* shopping cart icon */
+#artcard .btn .price, .shopping-cart{
+    background: #333;
+    border: 0;
+    margin: 0;
+}
+#artcard .buy:hover{
+    color: #222;
+}
+/* the Icon */
+#artcard .btn .shopping-cart {
+    transform: translateX(-100%);
+    position: absolute;
+    background: #333;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+/* buy */
+#artcard .btn .buy {z-index: 3; font-weight: bolder;}
+.price+a{
+    color: inherit !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* product image  */
+#artcard .product-image {
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+    width: 50%;
+    display: inline-block;
+}
+.carousel.slide, .carousel-inner, .carousel-item{
+    width: 100% !important; height: 100% !important;
+}
+#artcard .product-image img{width: 100%;height: 100%;}
+#artcard .info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Farsan', cursive;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 120%;
+    cursor: pointer;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#artcard .info h2{text-align: center;}
+#artcard .product-image:hover .info{transform: translateX(0);}
+#artcard .info ul li{transition: 0.3s ease;}
+#artcard .info ul li:hover{transform: translateX(50px) scale(1.3);}
+#artcard .product-image:hover img {transition: all 0.3s ease-out;}
+#artcard .product-image:hover img {transform: scale(1.2, 1.2);}
+.carousel-control-prev, .carousel-control-next{
+    visibility: hidden !important;
+}
+/*-------------------------------------------------
+                     ВК Виджет
+---------------------------------------------------*/
+#vk_comments{
+    width:100% !important;
+    margin-left:15% !important;
+    margin-right:15% !important;
+    margin-bottom: 150px;
+}
+@media screen and (min-width: 1001px) and (max-width: 1199px) {
+    #vk_comments{
+        width:100% !important;
+        margin-left:2% !important;
+        margin-right:2% !important;
+    }
+    .eh{
+        margin-left: 42.5% !important;
+        margin-right: 42.5% !important;
+    }
+    .loader {
+        top:45%;
+        left:20%;
+        position: absolute;
+        transform: translate(0%,-50%);
+        font-size: 0;
+        line-height: 1;
+    }
+    .prostopreload {
+        font-family:"Anton";
+        font-size:140px;
+        display: inline-block;
+        text-shadow: 0 0 0 cyan;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory-730x370.jpg);
+
+        animation: move 2s ease-in-out alternate-reverse infinite;
+    }
+    .prostopreload:first-child,.prostopreload:last-child{;
+        transform: translate(-10%,-50%);
+        font-size:180px;
+        text-shadow:5px 5px 15px #e700ff,
+        -5px -5px 15px #e700ff;
+    }
+    #artcard{
+        margin-top:80px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .control{
+        left:5% !important;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .navbar.fixed-top+.container{
+        left:0%;
+    }
+    .control{
+        position: initial !important;
+    }
+    .btn{
+        white-space: normal !important;
+        left:16%;
+    }
+    .price,.buy{
+        display: block !important;
+    }
+    #artcard .product-details h1{
+        margin-left: 28.5%;
+        margin-right: 28.5%;
+    }
+    #artcard .product-details > p{
+        padding-top: 40px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    #artcard .product-details > p{
+        font-size: 25px;
+    }
+    #vk_comments{
+        width: 100% !important;
+        margin-left:1% !important;
+        margin-right:1% !important;
+    }
+    .loader {
+        top:40%;
+        left:15%;
+        position: absolute;
+        transform: translate(0%,-50%);
+        font-size: 0;
+        line-height: 1;
+    }
+    .prostopreload {
+        font-family:"Anton";
+        font-size:140px;
+        display: inline-block;
+        text-shadow: 0 0 0 cyan;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory-730x370.jpg);
+
+        animation: move 2s ease-in-out alternate-reverse infinite;
+    }
+    .prostopreload:first-child,.prostopreload:last-child{;
+        transform: translate(-10%,-50%);
+        font-size:180px;
+        text-shadow:5px 5px 15px #e700ff,
+        -5px -5px 15px #e700ff;
+    }
+    #artcard{
+        margin-top:60px;
+    }
+}
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+    .eh{
+        margin-left: 39.5% !important;
+        margin-right: 39.5% !important;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 849px) {
+    .eh{
+        margin-left: 37.5% !important;
+        margin-right: 37.5% !important;
+    }
+}
+@media screen and (max-width: 699px) {
+    #artcard .product-details > p {
+        padding-top: 20px;
+    }
+    #artcard{
+        height:1030px;
+        margin-top:10px;
+    }
+    #artcard .product-image{
+        top:450px;
+        position: absolute;
+        display: block;
+        width:100% !important;
+
+    }
+    #artcard .product-image img{
+        -webkit-transform: scaleX(0.8);
+        -moz-transform: scaleX(0.8);
+        -ms-transform: scaleX(0.8);
+        -o-transform: scaleX(0.8);
+        transform: scaleX(0.8) scaleY(0.9);
+    }
+    #artcard .product-image img:hover, #artcard .product-image img:active{
+        -webkit-transform: scaleX(0.8);
+        -moz-transform: scaleX(0.8);
+        -ms-transform: scaleX(0.8);
+        -o-transform: scaleX(0.8);
+        transform: scaleX(0.8) scaleY(0.9);
+    }
+    #artcard .product-details{
+        width:100%;
+    }
+    #artcard .product-details h1{
+         margin-left: 42%;
+         margin-right: 42%;
+    }
+    #artcard .control{
+        left:0% !important;
+    }
+    .btn{
+        width:100% !important;
+        position: inherit !important;
+    }
+    .eh{
+        margin-left: 38% !important;
+        margin-right: 38% !important;
+    }
+    #vk_comments{
+        margin-left:0% !important;
+        margin-right:0% !important;
+    }
+    .loader {
+        top:50%;
+        left:12%;
+        position: absolute;
+        transform: translate(0%,-50%);
+        font-size: 0;
+        line-height: 1;
+    }
+    .prostopreload {
+        font-family:"Anton";
+        font-size:80px;
+        display: inline-block;
+        text-shadow: 0 0 0 cyan;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory-730x370.jpg);
+
+        animation: move 2s ease-in-out alternate-reverse infinite;
+    }
+    .prostopreload:first-child,.prostopreload:last-child{;
+        transform: translate(-10%,-50%);
+        font-size:100px;
+        text-shadow:5px 5px 15px #e700ff,
+        -5px -5px 15px #e700ff;
+    }
+    .carousel-indicators{
+        display: none !important;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        visibility: visible !important;
+    }
+    .info{
+        display: none !important;
+    }
+    #artcard .product-image:hover img {
+        -webkit-transform: scaleX(0.8);
+        -moz-transform: scaleX(0.8);
+        -ms-transform: scaleX(0.8);
+        -o-transform: scaleX(0.8);
+        transform: scaleX(0.8) scaleY(0.9);
+    }
+    #artcard .info ul li:hover, #artcard .product-image:hover .info  {transform: none !important;}
+
+}
+@media screen and (max-width: 580px) {
+    .loader {
+        top: 50%;
+        left: 15%;
+        position: absolute;
+        transform: translate(0%, -50%);
+        font-size: 0;
+        line-height: 1;
+    }
+    .prostopreload {
+        font-family: "Anton";
+        font-size: 60px;
+        display: inline-block;
+        text-shadow: 0 0 0 cyan;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory-730x370.jpg);
+
+        animation: move 2s ease-in-out alternate-reverse infinite;
+    }
+    .prostopreload:first-child, .prostopreload:last-child {;
+        transform: translate(-10%, -50%);
+        font-size: 80px;
+        text-shadow: 5px 5px 15px #e700ff,
+        -5px -5px 15px #e700ff;
+    }
+    .eh{
+        margin-left:33% !important;
+        margin-right: 33% !important;
+    }
+}
+@media screen and (min-width: 576px){
+    .container {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:558px){
+    #artcard .product-image{
+        top:500px;
+    }
+    #artcard{
+        height:1080px;
+    }
+    #artcard .product-image img,#artcard .product-image img:hover, #artcard .product-image img:active{
+        -webkit-transform: scaleX(0.9);
+        -moz-transform: scaleX(0.9);
+        -ms-transform: scaleX(0.9);
+        -o-transform: scaleX(0.9);
+        transform: scaleX(0.9) scaleY(0.9);
+    }
+}
+@media screen and (max-width:520px){
+    #artcard .product-image img,#artcard .product-image img:hover, #artcard .product-image img:active{
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        transform: scaleX(1) scaleY(0.9);
+    }
+}
+@media screen and (max-width:434px){
+    #artcard{
+        height:1100px;
+    }
+    #artcard .product-image{
+        top:530px;
+    }
+    #artcard .product-image img,#artcard .product-image img:hover, #artcard .product-image img:active{
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        transform: scaleX(1) scaleY(0.8);
+    }
+    .eh{
+        margin-left: 28% !important;
+        margin-right: 28% !important;
+    }
+}
+@media screen and (max-width:399px){
+    #artcard{
+        height: 1000px;
+    }
+    #artcard .product-image{
+        top:430px;
+    }
+    #artcard .product-details > p {
+        font-size:23px;
+    }
+    #artcard .product-image img,#artcard .product-image img:hover, #artcard .product-image img:active{
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        transform: scaleX(1) scaleY(0.8);
+    }
+    .eh{
+        margin-left: 28% !important;
+        margin-right: 28% !important;
+    }
+    #artcard .product-details h1{
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+}
+@media screen and (max-width:384px){
+    #artcard .product-image img,#artcard .product-image img:hover, #artcard .product-image img:active{
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        transform: scaleX(1) scaleY(0.8);
+    }
+    .eh{
+        margin-left: 28% !important;
+        margin-right: 28% !important;
+    }
+    #artcard .product-details h1{
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+}
+/*-------------------------------------------------
+                     Модальное окно
+---------------------------------------------------*/
+#exampleModalLabel{
+    text-align: center;
+}
+#kartinkamodul{
+    width:80%;
+}

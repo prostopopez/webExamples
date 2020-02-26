@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding: 0;
+}
+/*wrapper может сделатьсайт неадаптивным*/
+
+
+nav{
+    background-color: #222;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    border-left: 3px dotted #fff;
+    padding: 15px;
+    margin: 0;
+}
+nav li:first-child{
+    border-left: 0;
+}
+nav li:hover {
+    background-color: #a60eff;
+    cursor: pointer;
+}
+nav a{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    text-decoration: none;
+}
+
+header{
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #05134c, rgb(158, 42, 114));
+}
+header h1{
+    margin:0;
+    padding: 35px 0 40px 15px;
+    font-family: "Arial", "sans-serif";
+    color: white;
+    font-size: 50px;
+}
+
+.main{
+    padding: 0 15px 0 15px;
+    float: left;
+    width: 60%;
+}
+.sidebar1{
+    float:left;
+    width: 20%;
+}
+.sidebar2{
+    float: right;
+    width: 20%;
+}
+
+footer{
+    clear: both;
+}
+footer{
+    background-color: #000;
+}
+footer p{
+    color: #d3d3d3;
+    margin:0;
+    padding: 15px 15px 0 15px;
+}
+footer p:last-child{
+    padding: 0 15px 30px 15px;
+}
+footer a{
+    color: #fff;
+}
+
+nav ul, header h1, footer p{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.content-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
